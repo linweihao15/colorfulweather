@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/weathermsg"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/weatherimage"
+        android:layout_below="@+id/weatherimage"
+        android:gravity="center"
+        android:text="多云"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="38dp"
+        android:gravity="center"
+        android:text="23"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/temp"
+        android:layout_alignBottom="@+id/temp"
+        android:layout_toRightOf="@+id/temp"
+        android:text="@string/celsius"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/low_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/low"
+        android:layout_alignBottom="@+id/low"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/high"
+        android:text="13"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/high_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/high"
+        android:layout_alignBottom="@+id/high"
+        android:layout_alignLeft="@+id/low_temp"
+        android:text="18"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/WD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/temp"
+        android:layout_below="@+id/high_temp"
+        android:layout_marginTop="21dp"
+        android:text="东南风"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/update"
+        android:layout_alignBottom="@+id/update"
+        android:layout_alignRight="@+id/weathermsg"
+        android:text="10:45"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/WS"
+        android:layout_below="@+id/SD"
+        android:layout_marginTop="29dp"
+        android:text="@string/update"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/WD"
+        android:layout_below="@+id/WD"
+        android:layout_marginTop="38dp"
+        android:text="@string/humidity"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/SD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/humidity"
+        android:layout_alignBottom="@+id/humidity"
+        android:layout_toRightOf="@+id/temp"
+        android:text="45%"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/weathermsg"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="北京"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/weatherimage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/SD"
+        android:src="@drawable/weather03" />
+
+    <TextView
+        android:id="@+id/low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/celsius"
+        android:layout_alignLeft="@+id/weathermsg"
+        android:text="@string/low"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/low"
+        android:layout_below="@+id/celsius"
+        android:text="@string/high"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/WS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/humidity"
+        android:layout_toRightOf="@+id/SD"
+        android:text="4级"
+        android:textSize="25sp" />
+
+</RelativeLayout>

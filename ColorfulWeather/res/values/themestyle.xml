@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 黑色主题 -->
+    <style name="default_theme" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/theme1</item>
+        <item name="titleBackground">@drawable/title1</item>
+    </style>
+    <!-- 蓝色主题 -->
+    <style name="blue_theme" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/theme2</item>
+        <item name="titleBackground">@drawable/title2</item>
+    </style>
+    <!-- 灰色主题 -->
+    <style name="gray_theme" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/theme3</item>
+        <item name="titleBackground">@drawable/title3</item>
+    </style>
+    <!-- 橙色主题 -->
+    <style name="orange_theme" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/theme4</item>
+        <item name="titleBackground">@drawable/title4</item>
+    </style>
+    <!-- 天蓝色主题 -->
+    <style name="azure_theme" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/theme5</item>
+        <item name="titleBackground">@drawable/title5</item>
+    </style>
+    <!-- 粉红色主题 -->
+    <style name="pink_theme" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/theme6</item>
+        <item name="titleBackground">@drawable/title6</item>
+    </style>
+
+</resources>

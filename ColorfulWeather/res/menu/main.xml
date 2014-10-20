@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/addCity"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/addCity"/>
+    <item
+        android:id="@+id/changeTheme"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/changeTheme"/>
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/share"/>
+    <item
+        android:id="@+id/setting"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/setting"/>
+
+</menu>
